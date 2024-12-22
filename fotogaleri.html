@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoğraf Galerisi</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-title {
+            font-size: 22px;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .card-description {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 10px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="gallery-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="img/bmw 320ii.webp" alt="Car Image 1">
+            <div class="card-content">
+                <h3 class="card-title">BMW 320i</h3>
+                <p class="card-description">Yüksek performans ve şıklık bir arada. BMW 320i, her yolculukta keyif sunar.</p>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="img/audi a3.jpg" alt="Car Image 2">
+            <div class="card-content">
+                <h3 class="card-title">Audi A3</h3>
+                <p class="card-description">Audi'nin zarif tasarımı ve güçlü motoru ile sürüş keyfini keşfedin.</p>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="img/mercedes ben-z c.webp" alt="Car Image 3">
+            <div class="card-content">
+                <h3 class="card-title">Mercedes-Benz C-Class</h3>
+                <p class="card-description">İleri teknoloji ve konforlu sürüş deneyimi sunan Mercedes-Benz C-Class.</p>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="img/tesla model s.jpg" alt="Car Image 4">
+            <div class="card-content">
+                <h3 class="card-title">Tesla Model S</h3>
+                <p class="card-description">Elektrikli devrim! Tesla Model S, hız ve çevre dostu sürüş sunar.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img/tog.png" alt="Car Image 5">
+            <div class="card-content">
+                <h3 class="card-title"><\TOG/></h3>
+                <p class="card-description">Tog Otomobilimiz Yerli Ve Milli Değerimiz.</p>
+                <a href="index.html" style="font-size: 25px;  color: #333;"  >Sadece Tog</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="img/porsche 718.jpg" alt="Car Image 6">
+            <div class="card-content">
+                <h3 class="card-title">Porsche Cayman 718</h3>
+                <p class="card-description">Gevur Arabası.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+<nav>
+</html>
